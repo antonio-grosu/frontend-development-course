@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #fb9f89;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.logo {
+  color: #1e1e24;
+  font-family: "Poppins";
+}
+
+.link {
+  color: #1e1e24;
+  font-family: "Poppins";
+}
+
+.first-section {
+  background-color: #81ae9d;
+  width: 100%;
+  color: white;
+  padding-left: 120px;
+  padding-right: 120px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.first-section h1 {
+  font-family: "Poppins";
+  font-size: 32px;
+}
+
+.first-section p {
+  font-family: "Poppins";
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.first-section button {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-top: 20px;
+  font-family: "Poppins";
+  background-color: #c4af9a;
+  border: 0;
+  border-radius: 10px;
+}
+
+.img-container {
+  width: 20%;
+}
+
+.img-container img {
+  width: 100%;
+}
+
+footer {
+  background-color: #1e1e24;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+  font-family: "Poppins";
+  color: white;
+}
+
+.img-container-mobile {
+  display: none;
+}
+
+@media (max-width: 740px) {
+  .img-container-mobile {
+    display: block;
+    width: 80%;
+  }
+  .img-container-mobile img {
+    width: 100%;
+  }
+  .img-container {
+    display: none;
+  }
+  .div-elements {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .div-elements h1 {
+    text-align: center;
+  }
+  .div-elements button {
+    width: 80%;
+  }
+
+  .first-section {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
